@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {    
+$(document).ready(function() {    
     var apiKey = "e790d4e82006ca50828418f49c2be10c"; 
     console.log('state_info is: ${state_info}');
     

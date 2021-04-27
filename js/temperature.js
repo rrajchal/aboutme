@@ -39,7 +39,7 @@ Object.keys(state_info).forEach(function(key) {
 });
     
     function setStateColor(state, color) {
-        console.log("Setting " + state + " to " + color);
+        //console.log("Setting " + state + " to " + color);
         $('#'+state).css('fill', color);
     }
 

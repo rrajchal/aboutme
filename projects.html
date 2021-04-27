@@ -8,31 +8,56 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/mystyle.css">
 		<script src="lib/jquery/jquery-1.11.3.min.js"></script>
-		<script src="js/main.js"></script> 
+		<script src="js/tictac.js"></script> 
 	</head>
 
 	<body>
-	<p>This page is under construction. In the mean time, play the Tic-Tac-Toe.</p>
+	<p>This page is being continuosly updated.</p>
 	
-	<div class="center">
-				<img src="img/playnow.gif" alt="playnow" width="161" height="43">
-			</div>
+	<ol class="projectList">
+		<li>
+			<dt>
+				<a href="https://github.com/rrajchal/spring-mvc-isbn-validator">Spring MVC for ISBN Validation</a>
+			</dt>
+			<dd>
+				This Java project implements the Spring MVC framework and uses the tomcat server to validate 10 or 13 digits ISBN. I used Eclipse as an IDE. You can download the data and import it into Eclipse to run the project. 
+			</dd>
+			<p></p>
+		</li>
+		<li>
+			<dt>
+				<a href="https://github.com/rrajchal/AbstractAndInterface">Abstract and Interface</a>
+			</dt>
+			<dd>
+				This Java project implements Abstract and Interface classes along with the concept of Polymorphism.
+			</dd>
+			<p></p>
+		</li>
+		<li>
+			<dt>
+				<a href="temperature.html">US Temperature Map</a>
+			</dt>
+			<dd>
+				This JavaScript project uses RESTful API from <a href="https://darksky.net/"> darksky.net</a>. 
+				The US map is created using SVG (Scalable Vector Graphics), a vector-based graphics. 
+				JavaScript is used to pull temperature data and to display state color. 
+			</dd>
+			<p></p>
+		</li>
+		<li>
+			<dt>
+				<a href="tictac.html">Tictac Game</a>
+			</dt>
+			<dd>
+				A basic TicTac game using JavaScript and HTML. 
+				The JavaScript code is a modified version of <a href="http://www.javascriptkit.com/script/script2/tactoe.shtml" target="_blank" >Cory Fogliani</a>.
+			</dd>
+			<p></p>
+		</li>
 	  
-		<h2 class="center">Play Tic-Tac-Toe</h2>
-
-		<FORM class="center" NAME="tic" method="post">
-		<INPUT TYPE="button" NAME="sqr1" class="tictac" value="     " onClick="if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 1; vari(); check();} else if(document.tic.sqr1.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr1.value = ' O '; sqr1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr2" class="tictac" value="     " onClick="if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 1; vari(); check();} else if(document.tic.sqr2.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr2.value = ' O '; sqr2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr3" class="tictac" value="     " onClick="if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 1; vari(); check();} else if(document.tic.sqr3.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr3.value = ' O '; sqr3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
-		<INPUT TYPE="button" NAME="sqr4" class="tictac" value="     " onClick="if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 1; vari(); check();} else if(document.tic.sqr4.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr4.value = ' O '; sqr4T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr5" class="tictac" value="     " onClick="if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 1; vari(); check();} else if(document.tic.sqr5.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr5.value = ' O '; sqr5T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr6" class="tictac" value="     " onClick="if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 1; vari(); check();} else if(document.tic.sqr6.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr6.value = ' O '; sqr6T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
-		<INPUT TYPE="button" NAME="sqr7" class="tictac" value="     " onClick="if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 1; vari(); check();} else if(document.tic.sqr7.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr7.value = ' O '; sqr7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr8" class="tictac" value="     " onClick="if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 1; vari(); check();} else if(document.tic.sqr8.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr8.value = ' O '; sqr8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<INPUT TYPE="button" NAME="sqr9" class="tictac" value="     " onClick="if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 1; vari(); check();} else if(document.tic.sqr9.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr9.value = ' O '; sqr9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-		<p class="center"><a href="http://www.javascriptkit.com/script/script2/tactoe.shtml" target="_blank" ><font size="3">Modified from Cory Fogliani</font></a></p>
-
-		</FORM>
+	</ol>
+	  
+	<h2 class="center"><a class="going-back" href="index.html">Go Back to About Me</a></h2>
 
 	</body>
 </html>

@@ -40,6 +40,16 @@
 		padding: 0% 0% 0% 2%;
 		margin: 0% 0% 0% 2%;
 	}
+	
+	dd {
+		margin: 1% 0% 0% -0%;
+	}
+	
+	.projectList{
+		font-size: 30px;
+		font-family: "Times New Roman", Times, serif;
+		padding: 2% 5% 5% 5%;
+	}
 
 	.container-wrapper {				
 		padding: 40px 0;
@@ -64,7 +74,7 @@
 		position: relative;
 		z-index: 2;
 		background-image: url(../img/rajesh.png);
-		background-size: 218px 190px;
+		background-size: 200px 200px;
 		background-repeat: no-repeat;
 		background-position: center;
 		height: 200px;
@@ -146,7 +156,7 @@
 	}
 	
 	.highlightme { 
-		background-color: #F7CAAD; 
+		background-color: #C0D4EC; 
 	}
 
 	/* unvisited link */
@@ -177,6 +187,56 @@
 		position: absolute;
 		top: 0;
 		right: 120px;
+	}
+	
+	.state {
+		fill: #D3D3D3;
+		stroke-width: 0.1;
+		stroke: #FFFFFF;
+	}
+	
+	.grayLabel {
+		fill: gray;
+		stroke-width: 0.1;
+		stroke: gray;
+	}
+	
+	.redLabel {
+		fill: red;
+		stroke-width: 0.1;
+		stroke: red;
+	}
+	
+	.orangeLabel {
+		fill: orange;
+		stroke-width: 0.1;
+		stroke: orange;
+	}
+	
+	.greenLabel {
+		fill: green;
+		stroke-width: 0.1;
+		stroke: green;
+	}
+	
+	.cyanLabel {
+		fill: cyan;
+		stroke-width: 0.1;
+		stroke: cyan;
+	}
+	
+	.blueLabel {
+		fill: blue;
+		stroke-width: 0.1;
+		stroke: blue;
+	}
+	
+	.labelText {
+		font-size: 15px;
+		font-family: sans-serif;
+		fill: black;
+		stroke: none;
+		text-anchor: middle;
 	}
 
 </style>
